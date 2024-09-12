@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.walletButton,
+.startVotingButton,
+.voteButton {
+  background-color: rgb(40, 133, 40);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.walletButton:hover,
+.startVotingButton:hover,
+.voteButton:hover {
+  background-color: rgb(26, 85, 26);
+}
+
+.voteButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.walletAddress {
+  text-align: right;
+  color: darkgray;
+}
+
+.candidateRow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.status {
+  color: darkgrey;
+}
